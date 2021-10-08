@@ -1,0 +1,11 @@
+---
+version: 3.8
+
+services:
+  grundza:
+    build: .
+    restart: always
+    volumes:
+      - .:/grundza/:cached
+    ports:
+      - 8080:8080
